@@ -1,0 +1,35 @@
+<div class="loginContainer">
+    <div class="col-md-12 img-padding"><img src="http://www.genesiswebstudio.com/wp-content/uploads/2014/10/rackspace_logo.png"/></div>
+    
+    <div ng-if="action !== 'forgot'">
+        <div class="row actionButtons">
+            <div class="col-md-6 btn btn-default" ng-click="loginController.select('signup')" ng-class="{'btn-selected': action == 'signup'}">Sign Up</div>
+            <div class="col-md-6 btn btn-default" ng-click="loginController.select('login')" ng-class="{'btn-selected': action == 'login'}">Login</div>
+        </div>
+        <div class="fieldSection">
+            <span ng-if="message" ng-class="{'success': loginController.doesMessageContainError(), 'error': !loginController.doesMessageContainError()}">{{message}}</span>
+            <input type="email" class="form-control" placeholder="Email" ng-model="user.email">
+            <input type="password" class="form-control" placeholder="Password" ng-model="user.password">
+            <input type="text" class="form-control" placeholder="Username" ng-model="user.username" ng-if="action=='signup'">
+        </div>
+    </div>
+    
+    
+    <div class="fieldSection" ng-if="action === 'forgot'">
+        <span ng-if="message" ng-class="{'success': loginController.doesMessageContainError(), 'error': !loginController.doesMessageContainError()}">{{message}}</span>
+        <div class="input-group">
+            <input type="email" class="form-control" placeholder="Email" ng-model="user.email" novalidate>
+            <span class="input-group-addon" id="sizing-addon1">reset</span>
+        </div>
+    </div>
+    
+    <div class="rememberMe row" ng-if="action=='login'">
+        <div class="col-md-6">
+            <input type="checkbox" ng-model="user.rememberMe"> <span> &nbsp; Remember me</span>
+        </div>
+    </div>
+    
+    <div class="row actionButtons">
+        <div class="col-md-12 btn btn-default" ng-click="loginController.auth()" ng-if="loginController.enableLoginButton()">{{action}}</div>
+    </div>
+</div>

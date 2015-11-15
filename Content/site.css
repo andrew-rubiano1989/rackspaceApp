@@ -1,0 +1,131 @@
+input{
+    min-width: 200px;
+    font-size: 14px;
+    padding: 5px;
+    border: none !important;
+}
+
+.loginPage{
+    /*background-image: url("http://cookbooks.ca.com/camdm/wp-content/uploads/2013/10/Network-Server-Room.jpg");
+    background-image: url("https://storageswiss.files.wordpress.com/2015/08/server-room-interior-in-datacenter-000070297009_xxxlarge.jpg");*/
+    background-image: url("https://blog.xenproject.org/wp-content/uploads/2014/03/Rackspace_events_2.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.loginForm{
+    padding: 30px;
+    padding-top: 20px;
+    background: #f3f3f3;
+    border-radius: 3px;
+    align: center;
+}
+
+.loginFormRow{
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.loginButton{
+    min-width: 200px;
+    border-radius: 0px;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.rememberMe{
+    text-align: left;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.forgotPassword{
+    text-align: right;
+}
+
+.transparentBox{
+    padding: 30px;
+    //background-color: rgba(0,0,0,.75);
+    border-radius: 0px;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,.55);
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.loginContainer{
+    background: rgba(255,255,255,.95);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.fieldSection{
+    //background: #c0c0c0;
+    padding: 20px;
+    text-align:center;
+}
+
+.buttonSection{
+    padding: 20px;
+    text-align: center;
+}
+
+.row{
+    margin-left:0px;
+    margin-right:0px;
+}
+
+.buttonRow{
+    margin-top: 10px;
+}
+
+.img-padding{
+    padding-bottom: 20px;
+}
+
+.btn{
+    border-radius: 0px !important;
+    border: none !important;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.btn-selected{
+    background: #c0c0c0 !important;
+    color: #ffffff;
+}
+
+.error{
+    text-align:center;
+    color: red;
+}
+
+.success{
+    text-align:center;
+    color: green;
+}
+
+.actionButtons{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.column{
+    padding: 20px;
+    background: #f3f3f3;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}

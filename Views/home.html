@@ -1,0 +1,35 @@
+
+<div ng-controller="mainController as mc">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#/home">
+            <img alt="Brand" src="http://images.cdn.rackspace.com/icons/og-image.png" height="32px" width="32px" style="margin-top: -5px;">
+          </a>
+           <form class="navbar-form navbar-left" role="search">
+            <input type="button" value="Logout" class="btn btn-default" ng-click="mc.logout()">
+            </form>
+        </div>
+      </div>
+    </nav>
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12 column">
+            <h1>Hello <span>{{user}}!</span></h1>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12 column"><img src="http://i.kinja-img.com/gawker-media/image/upload/s--a2Uo7FWr--/c_fit,fl_progressive,q_80,w_636/ulagisgaezgi371h7qxv.jpg"></div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12 column"><h3>Here are some more cat pictures for you!</h3></div>
+        </div>
+        <div class="col-md-12 column"><img src="http://petsfans.com/wp-content/uploads/2014/11/edfsaf.jpg"></div>
+        <div class="col-md-12 column"><img src="https://i.ytimg.com/vi/icqDxNab3Do/maxresdefault.jpg"></div>
+        <div class="col-md-12 column"><img src="http://www.lolcats.com/images/u/13/39/tastegood.jpg"></div>
+    </div>
+</div>
+<div ng-controller="mainController">
+</div>
